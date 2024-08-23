@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reno</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>State of Nevada</h1>
+        <img src="https://yt3.googleusercontent.com/ytc/AIdro_ndzj35QilxvyOyfsi-lMJo-Y3ONGqW8CrsAs19Ehxn0R8=s900-c-k-c0x00ffffff-no-rj" id="wgu">
+        <nav>
+            <ul>
+                <li><a href="index.html" target="_blank">State</a></li>
+                <li><a href="carson-city.html" target="_blank">Carson City</a></li>
+                <li><a href="reno.html" target="_blank">Reno</a></li>
+                <li><a href="las-vegas.html" target="_blank">Las Vegas</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <h2>Welcome To Reno</h2>
+        <img src="https://d6dyoorq84mou.cloudfront.net/uploads/job/logo/13328930/CityofReno_Seal-4Color.jpg" 
+             alt="Reno City Logo" 
+             width="10%" height="10%"
+             id="logor">
+        <p id="wintro">
+            This is the official page for Reno, Nevada by the Nevada Government Office. This page is dedicated to 
+            helping tourists and residents explore what the "Biggest Little City" has to show for itself.
+        </p>
+    </header>
+    <section>
+        <h3>History of Reno</h3>
+        <p>
+            Reno was founded in 1868 and, similar to many other popular cities in Nevada, was also a hub for mining 
+            and railroads. It first gained traction in the 20th century as a center for gambling, quickly earning its 
+            title of "The Biggest Little City in the World."
+        </p>
+        <p>
+            Today, Reno is holding true to its roots in gambling and proximity to historical sites and Lake Tahoe.
+        </p>
+    </section>
+    <section>
+        <h3>Fun Facts About Reno</h3>
+        <ol>
+            <li>The city population is <strong>264,165</strong> as of 2020 (United States Census Bureau)</li>
+            <li>Reno was officially incorporated into Nevada in <strong>1903</strong> (Nevada Historical Society)</li>
+            <li>Reno is part of <strong>Washoe county</strong> and is on the western region of the state</li>
+            <li>Reno as one of Nevada's fastest growing cities, is very urban and expected to grow even faster</li>
+            <li>Reno has an median household income of <strong>$72,103</strong> compared to the state median of <strong>$72,333</strong> (United States Census Bureau)</li>
+        </ol>
+        <sub>*Sources can be found in the footer</sub>
+        <div class="mapin">
+            <h3>Reno Map</h3>
+            <p>Here is a map of Reno. As you can see, Reno is pretty expansive.</p>
+            <p>The surrounding cities include Sparks, Sun Valley, North Valley, Demontey, Incline Village, Carson City, and more.</p>
+            <img src="https://reno.californiamedia.com/images/map_reno.jpg" alt="Nevada Map" width="25%" class="map">
+    </div>
+    </section>
+    <aside>
+        <h3>Learn More</h3>
+        <p><a href="https://www.nvhistoricalsociety.org/exhibits/reno-history/">History of Reno In-Depth</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Reno,_Nevada">Reno Wikipedia Page</a></p>
+    </aside>
+    <hr>
+    <footer>
+        <form action="/submit" id="form">
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Enter your first name" required><br><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Enter your last name" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+            <label for="confirm-email">Confirm Email:</label><br>
+            <input type="email" id="confirm-email" name="confirm-email" placeholder="Re-enter your email" required><br><br>
+            <label for="question">Your Question:</label><br>
+            <textarea id="question" name="question" rows="4" cols="50" placeholder="Type your question here" required></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <script>
+        document.getElementById('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var email = document.getElementById('email').value;
+            var confirmEmail = document.getElementById('confirm-email').value;
+            if (email !== confirmEmail) {
+                alert('The email addresses do not match. Please check and try again.');
+            } else {
+                alert("This submit button doesn't do anything as assignment states 'Note: The form does not need to include a functional Submit button.'");
+            }
+        });
+        </script>
+        <h3>Contact For More Information</h3>
+        <p><strong>Fauke Namay | Governor</strong></p>
+        <p>Email: <a href="mailto:fauke.namay@example.com" target="_blank">fauke.namay@example.gov</a></p>
+        <p><strong>Nauto Riol | Secretary of Tourism</strong></p>
+        <p>Email: <a href="mailto:nauto.riol@example.com" target="_blank">nauto.riol@example.gov</a></p>
+        <h3>Sources</h3>
+        <p>U.S. Census Bureau. (n.d). Reno City, Nevada - Census Bureau Profile. Retrieved August 21, 2024, from https://data.census.gov/profile/Reno_city,_Nevada?g=160XX00US3260600.</p>
+        <p>Nevada Historical Society (n.d). Reno History. https://www.nvhistoricalsociety.org/exhibits/reno-history/</p>
+        <p></p>
+    </footer>
+</body>
+</html>

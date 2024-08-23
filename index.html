@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nevada Government Office</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>State of Nevada</h1>
+        <img src="https://yt3.googleusercontent.com/ytc/AIdro_ndzj35QilxvyOyfsi-lMJo-Y3ONGqW8CrsAs19Ehxn0R8=s900-c-k-c0x00ffffff-no-rj" id="wgu">
+        <nav>
+            <ul>
+                <li><a href="index.html" target="_blank">State</a></li>
+                <li><a href="carson-city.html" target="_blank">Carson City</a></li>
+                <li><a href="reno.html" target="_blank">Reno</a></li>
+                <li><a href="las-vegas.html" target="_blank">Las Vegas</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <h2>Welcome To The Nevada Government Office Website</h2>
+        <img src="https://plaquesandpatches.com/wp-content/uploads/2006/03/Nevada-State-Seal.jpg" 
+             alt="Nevada State Logo" 
+             width="15%" height="15%"
+             id="logo">
+        <p id="wintro">
+            Welcome! This website is dedicated to assisting visitors from across the states in learning 
+            and exploring our 3 major cities. This is the official website created by the Nevada Government 
+            Office.
+        </p>
+    </header>
+    <section>
+        <h3>History of Nevada</h3>
+        <p>
+            Nevada, also known as the "Silver State," derived its name from its deeply rooted mining history. 
+            Nevada was originally inhabited by indigenous groups such as the Paiute, Shoshone, and Washoe 
+            tribes before 1859, when the Comstock Lode was discovered. This led to a large mining rush that 
+            resulted in Nevada's statehood (State of Nevada Joint Information Center).
+        </p>
+        <p>
+            Today, Nevada has moved forward to become a state of natural beauty, historical significance, 
+            and modern attractions that include many festivals and industries such as casinos.
+        </p>
+        <div class="mapin">
+                <h3>Nevada Map</h3>
+                <p>Here is a map of Nevada. As you can see, Nevada is made up of 17 counties. The majority of the population within Nevada lives on the western and southern regions primarily within Las Vegas, Reno, and Carson City.</p>
+                <p>The surrounding states are California, Oregon, Idaho, Utah, and Arizona.</p>
+                <p> Nevada has many large bodies of water including Lake Tahoe, Pyramid Lake, Angel Lake, Lake Las Vegas, and more.</p>
+                <img src="https://www.worldatlas.com/upload/12/4e/55/nevada-counties-map.png" alt="Nevada Map" width="25%" class="map">
+        </div>
+    </section>
+    <aside>
+        <h3>Learn More</h3>
+        <p><a href="https://jic.nv.gov/About/History_of_Nevada/" target="_blank">History of Nevada In-Depth</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/History_of_Nevada" target="_blank">Nevada Wikipedia Page</a></p>
+    </aside>
+    <hr>
+    <footer>
+        <form action="/submit" id="form">
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Enter your first name" required><br><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Enter your last name" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+            <label for="confirm-email">Confirm Email:</label><br>
+            <input type="email" id="confirm-email" name="confirm-email" placeholder="Re-enter your email" required><br><br>
+            <label for="question">Your Question:</label><br>
+            <textarea id="question" name="question" rows="4" cols="50" placeholder="Type your question here" required></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <script>
+        document.getElementById('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var email = document.getElementById('email').value;
+            var confirmEmail = document.getElementById('confirm-email').value;
+            if (email !== confirmEmail) {
+                alert('The email addresses do not match. Please check and try again.');
+            } else {
+                alert("This submit button doesn't do anything as assignment states 'Note: The form does not need to include a functional Submit button.'");
+            }
+        });
+        </script>
+        <h3>Contact For More Information</h3>
+        <p><strong>Fauke Namay | Governor</strong></p>
+        <p>Email: <a href="mailto:fauke.namay@example.com" target="_blank">fauke.namay@example.gov</a></p>
+        <p><strong>Nauto Riol | Secretary of Tourism</strong></p>
+        <p>Email: <a href="mailto:nauto.riol@example.com" target="_blank">nauto.riol@example.gov</a></p>
+        <h3>Sources</h3>
+        <p>State of Nevada Joint Information Center. (n.d). History of Nevada. Retrieved August 21, 2024, from https://jic.nv.gov/About/History_of_Nevada/.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carson City</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>State of Nevada</h1>
+        <img src="https://yt3.googleusercontent.com/ytc/AIdro_ndzj35QilxvyOyfsi-lMJo-Y3ONGqW8CrsAs19Ehxn0R8=s900-c-k-c0x00ffffff-no-rj" id="wgu">
+        <nav>
+            <ul>
+                <li><a href="index.html" target="_blank">State</a></li>
+                <li><a href="carson-city.html" target="_blank">Carson City</a></li>
+                <li><a href="reno.html" target="_blank">Reno</a></li>
+                <li><a href="las-vegas.html" target="_blank">Las Vegas</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <h2>Welcome To Carson City</h2>
+            <img src="https://images-na.ssl-images-amazon.com/images/I/51icgHTexHL._SX425_.jpg" 
+                alt="Carson City Seal" 
+                width="20%" height="20%"
+                id="logo">
+            <p id="wintro">
+                This is the official Carson City page by the Nevada Government Office. This web page is here to help 
+                visitors, tourists, and residents alike in learning more about what the capital of Nevada has to offer!
+            </p>
+    </header>
+    <section>
+        
+        <h3>History of Carson City</h3>
+        <p>
+            Carson City was founded in 1858 and was named after the famous frontiersman Kit Carson. During the 
+            silver rush of Nevada's early history, the site that would be Carson City was mainly a trading post 
+            and mining hub, but with growing residence and growth, it became the center of government and commerce.
+        </p>
+        <p>
+            Carson City remains Nevada's capital and continues to be the city that upholds the state government 
+            and serves as a cultural hub to explore the history of the state.
+        </p>
+    </section>
+    <section>
+        <h3>Fun Facts About Carson City</h3>
+        <ul>
+            <li>The city population is <strong>58,639</strong> as of 2022 (United States Census Bureau)</li>
+            <li>Carson City was officially incorporated into Nevada in <strong>1875</strong> (Visit Carson City, 2024)</li>
+            <li>Carson City used to be apart of <strong>Ormsby county</strong> on the western region of the state (Visit Carson City, 2024)</li>
+            <li>Despite being relatively low in population compared to Reno and Las Vegas, Carson City is still considered an urban city</li>
+            <li>Carson City has a median household income of <strong>$67,465</strong> compared to the state median of <strong>$72,333</strong> (United States Census Bureau)</li>
+        </ul>
+        <sub>*Sources can be found in the footer</sub>
+    </section>
+    
+    <aside>
+        <h3>Learn More</h3>
+        <p><a href="https://www.carson.org/our-city/history">History of Carson City In-Depth</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Carson_City,_Nevada">Carson City Wikipedia Page</a></p>
+    </aside>
+    
+    <hr>
+    <footer>
+        <form action="/submit" id="form">
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Enter your first name" required><br><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Enter your last name" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+            <label for="confirm-email">Confirm Email:</label><br>
+            <input type="email" id="confirm-email" name="confirm-email" placeholder="Re-enter your email" required><br><br>
+            <label for="question">Your Question:</label><br>
+            <textarea id="question" name="question" rows="4" cols="50" placeholder="Type your question here" required></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <script>
+        document.getElementById('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var email = document.getElementById('email').value;
+            var confirmEmail = document.getElementById('confirm-email').value;
+            if (email !== confirmEmail) {
+                alert('The email addresses do not match. Please check and try again.');
+            } else {
+                alert("This submit button doesn't do anything as assignment states 'Note: The form does not need to include a functional Submit button.'");
+            }
+        });
+        </script>
+        <h3>Contact For More Information</h3>
+        <p><strong>Fauke Namay | Governor</strong></p>
+        <p>Email: <a href="mailto:fauke.namay@example.com" target="_blank">fauke.namay@example.gov</a></p>
+        <p><strong>Nauto Riol | Secretary of Tourism</strong></p>
+        <p>Email: <a href="mailto:nauto.riol@example.com" target="_blank">nauto.riol@example.gov</a></p>
+        <h3>Sources</h3>
+        <p>U.S. Census Bureau. (n.d). Carson City, Nevada - Census Bureau Profile. Retrieved August 21, 2024, from https://data.census.gov/profile/Carson_City,_Nevada?g=050XX00US32510.</p>
+        <p>Nevada history. Visit Carson City. (2024, August 15). https://visitcarsoncity.com/nevadas-historic-capital/nevada-history/#:~:text=1864%20Nevada%20gains%20statehood%20on,City%2C%20Nevada%20is%20formally%20incorporated.</p>
+    </footer>
+</body>
+</html>

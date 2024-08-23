@@ -1,0 +1,159 @@
+/* Header-related styles */
+header {
+    position: relative;
+    padding: 1%;
+}
+#wgu {
+    width: 5%;
+    position: absolute;
+    top: 10px;
+    left: 300px;
+}
+
+h1 {
+    position: relative;
+}
+
+#logo {
+    float: right;
+    margin-top: 1%;
+    top: 35%; 
+    right: 0;
+    width: 10%;
+    height: auto;
+    background-color: transparent;
+}
+
+#logor {
+    float: right;
+    margin-top: 1%;
+    top: 35%; 
+    right: 0;
+    width: 8%;
+    height: auto;
+    background-color: transparent;
+}
+
+#wintro {
+    margin-right: 15%; 
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+    margin-bottom: 0px;
+    justify-content: space-between;
+    padding-left: 50%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+nav li {
+    margin: 0;
+    padding: 10px 20px;
+    background-color: lightyellow;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+    display: block;
+}
+
+nav a:hover {
+    font-weight: bold;
+    color: darkred;
+}
+
+/* Body and general styles */
+body {
+    font-family: "Microsoft Sans Serif", sans-serif;
+    margin: 5%;
+}
+
+/* Adjusted .map class for better alignment */
+.map {
+    margin: 1%; 
+    margin-left: 45%;
+    max-width: 20%; 
+    border: 1px solid black;
+}
+
+/* Section and footer styles */
+section {
+    padding: 1%;
+    overflow: hidden;
+}
+
+.mapin {
+    font-weight: bold;
+}
+
+footer {
+    padding: 1%;
+    padding-bottom: 8%;
+    margin-left: 1%;
+    background-color: lightgrey;
+    border: 1px solid black;
+    clear: both;
+}
+
+#lvs {
+    overflow-wrap: break-word;
+}
+
+/* Form styles */
+#form {
+    border: 2px solid black;
+    float: right;
+    padding: 1%;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+/* Aside styles */
+aside {
+    background-color: lightyellow;
+    margin-left: 1%;
+    margin-right: 70%;
+    border: 1px solid black;
+    padding: 1%;
+}
+
+/* Table styles */
+#table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#table th, #table td {
+    border: 1px solid #ddd;
+    padding: 6px;
+    text-align: center;
+}
+
+#table th {
+    background-color: #f2f2f2;
+}
+
+/* HR styles */
+hr {
+    border: none;
+    height: 5px;
+    background-color: rgb(0, 0, 131);
+    margin: 20px 0;
+    clear: both;
+}
